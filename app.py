@@ -401,6 +401,9 @@ final_dict = {
 # Flask will use arguments from these inputs to advance
 # gameplay forward. It will then return jsonified data
 # to the front-end so it can be visualized
+@app.route("/")
+def launch():
+    return render_template("index.html")
 
 @app.route("/<game>/<action>/<bet>")
 def gamePlay(game,action,bet):
