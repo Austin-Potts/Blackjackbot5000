@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BlackJack ML Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+	<link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+		
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #8aa6a2;">
+		<div class="container-fluid">
+			<h3 class="display-5">Blackjack Machine Learning</h3>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#teamSection">Team</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Try the App!</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!--- Carousel -->
+	<div id="slides" class="carousel slide" data-rider="carousel">
+		<ul class="carousel-indicators">
+			<li class = "slidebars" data-target="#slides" data-slide-to="0" class="active"></li>
+			<li class = "slidebars" data-target="#slides" data-slide-to="1"></li>
+			<li class = "slidebars" data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="img/background.png">
+				<div class="carousel-caption">
+					<h3>Placeholder for maybe vizzes</h3>
+				</div>
+			</div>
+			<div class="carousel-item viz">
+				<div class='tableauPlaceholder' id='viz1590456674309' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoogleMobilityReport-UKLockdown&#47;GMR1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GoogleMobilityReport-UKLockdown&#47;GMR1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Go&#47;GoogleMobilityReport-UKLockdown&#47;GMR1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='mobile=' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590456674309');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+			</div>
+			<div class="carousel-item viz">
+				<div class='tableauPlaceholder' id='viz1590457372180' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DieselvsPetrolPumpPriceintheUK&#47;UKPumpPrice&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DieselvsPetrolPumpPriceintheUK&#47;UKPumpPrice' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DieselvsPetrolPumpPriceintheUK&#47;UKPumpPrice&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='mobile=' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590457372180');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>			</div>
+			</div>
+			<a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+	</div>
+
+		<!--- Jumbotron -->
+	<div class="container-fluid">
+		<div class="row jumbotron">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+				<h3>This project utilizes RL machine learning to train an algorithm 
+					by playing a simulation blackjack game 1 million times. The algorithm learned to implement 
+					strategies by being rewarded each time it won a hand. The visuals in the slideshow above highlight our key findings. </h3>
+			</div>
+			<div class="col-12 text-center">
+					<a href="https://github.com/Austin-Potts/BlackjackMachineLearning" target="_blank"><button type="button" 
+						class="btn btn-outline-secondary btn-lg text-center">Github Repository</button></a>
+					<a href="#"><button type="button" 
+						class="btn btn-outline-secondary btn-lg text-center">Blackjack Bot 5000</button></a>
+			</div>
+		</div>
+	</div>
+
+	<!--Columns/main body-->
+	<div class = "container-fluid padding">
+	<div class = "row padding">
+		<div class="col-lg-6">
+			<h2>Test Header</h2>
+			<p>Test paragraph 1</p>
+			<p>Test paragraph 2</p>
+			<p>Test paragraph 3</p>
+		</div>
+		
+		<div class="container-fluid padding">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">Player - Hand 1</div>
+					<div class="row hand1">
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/2C.png" style="max-width:100%; max-height:100%;opacity:0" class="card-img-top player" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/3S.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player" alt="...">
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">Player - Hand 2 (For Splits)</div>
+					<div class="row hand2">
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/2C.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player2" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/3S.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player2" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player2" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player2" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player2" alt="...">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="card">
+								<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top player2" alt="...">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="row">Dealer Hand</div>
+					<div class='row'>
+					<div class="col-sm-2">
+						<div class="card">
+							<img src="./card_images/KH.png" style="max-width:100%; max-height:100%; opacity: 0;" class="card-img-top dealer" alt="...">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="card">
+							<img src="./card_images/green_back.png" style="max-width:100%; max-height:100%; opacity: 0;" class="card-img-top dealer down" alt="...">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="card">
+							<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top dealer" alt="...">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="card">
+							<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top dealer" alt="...">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="card">
+							<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top dealer" alt="...">
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="card">
+							<img src="./card_images/AC.png" style="max-width:100%; max-height:100%; opacity:0" class="card-img-top dealer" alt="...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='container-fluid'>
+			<div class='row'>
+				<div class='col-sm-3'>
+					<button type="button" onclick="action(0)" class="btn btn-sm btn-primary action-btn cards btn-outline-secondary text-center">Stay</button>
+					<button type="button" onclick="action(1)" class="btn btn-sm btn-primary action-btn cards btn-outline-secondary text-center">Hit</button>
+					<button type="button" onclick="action(2)" class="btn btn-sm btn-primary action-btn cards btn-outline-secondary text-center" disabled>Double Down</button>
+					<button type="button" onclick="action(3)" class="btn btn-sm btn-primary action-btn cards btn-outline-secondary text-center" disabled>Split Hand</button>
+				</div>
+				<div class='col-sm-3 gameOver' style="visibility: hidden;">
+					<button type="button" onclick="refreshBoard()" class="btn btn-sm btn-primary refresh-btn cards btn-outline-secondary text-center">New Game</button>
+					<span class='gameOverText'></span>
+				</div>
+	
+				<div class="col-sm-6 placeBet">
+					<!--<form action="null" onsubmit="startGame()" class='placeBet'>-->
+						<label for="fname">$10</label>
+						<input type="radio" id="fname" name="fname" value="10" checked>
+						<label for="fname"> | $50</label>
+						<input type="radio" id="fname" name="fname" value="50">
+						<label for="fname"> | $100</label>
+						<input type="radio" id="fname" name="fname" value="100">
+	
+						<button type="submit" onclick="startGame()" class="btn btn-primary cards btn-outline-secondary text-center">Place Bet</button>
+	
+						<span class='money'> | Current Money: $1000</span>
+					<!--</form>-->
+				</div>
+			</div>
+		</div>
+		<div class='container-fluid'>
+			<hr style='margin: 10   px;'>
+			<div class='row guidance'>
+				<div class='col-sm-6'>
+					<h1>Unconditional Win Probability</h1>
+					<h4>Based on 1M Simulations</h4>
+					<h1 class='totalWinProb' style='font-size:10em;'></h1>
+				</div>
+				<div class='col-sm-6'>
+					<div class='row'>
+						<h4>Based on your bet and past simulations, BlackJackBot 5000 suggests:  </h4>
+						<h4 class='betAction'>*Waiting for New Game*</h4>
+					</div>
+					<hr style='margin: 5px;'>
+					<div class='row'>
+						<h5>Conditional win probabilities:</h5>
+						<svg>
+	
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	<figure>
+		<div class="fixed-wrap">
+			<div id="fixed">
+			</div>
+		</div>
+	</figure>
+	<hr class="hr-100">
+
+	<!--- Tools used -->
+	<div class="container-fluid padding text-center">
+		<h3>Tools Used</h3>
+		<hr class="hr-50">
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<a href="https://www.python.org/" target="_blank"><i class="fab fa-python"></i></a>
+				<h3>Python 3</h3>
+				<p>Coded in Python</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<i class="fab fa-html5"></i>
+				<h3>HTML 5</h3>
+				<p>Foundational HTML</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<a href="https://getbootstrap.com/" target="_blank"><i class="fab fa-bootstrap"></i></a>
+				<h3>Bootstrap 4</h3>
+				<p>Built with Bootstrap</p></a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<i class="fab fa-css3-alt"></i>
+				<h3>CSS 3</h3>
+				<p>Designed with CSS</p>
+			</div>
+		</div>
+		<div class="row text-center padding">
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<a href = "https://signup.heroku.com/t/platform?c=70130000001xDpdAAE&gclid=CjwKCAjw8J32BRBCEiwApQEKgQrv8D8mOzv9N5h-iwBEUqD1klFkqjupdF-VCke-ia1Z8vnFwximdBoC5EAQAvD_BwE" target="_blank"><i class="fas fa-cloud"></i></a>
+				<h3>Heroku</h3>
+				<p>Hosted on Heroku</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<a href="https://www.tableau.com/" target="_blank"><i class="fas fa-braille"></i></a>
+				<h3>Tableau</h3>
+				<p>Visualized with Tableau</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<a href="https://www.javascript.com/" target="_blank"><i class="fab fa-js-square"></i></a>
+				<h3>Javascript</h3>
+				<p>Enhanced using Javascript</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				<a href="https://www.github.com/" target="_blank"><i class="fab fa-github-alt"></i></a>
+				<h3>Github</h3>
+				<p>Coordinated with Github</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+		
+	<!--- Meet the team -->
+	<!--- Fixed SMU background -->
+	
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 id ="teamSection" class="display-4">Meet the Team</h1>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+	<!--Team cards-->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-sm-6 col-md-4">
+				<div class="card text-center">
+					<img class="card-img-top us" src="https://avatars1.githubusercontent.com/u/13006381?s=400&u=a69f929c6104aad5af3f1f7a6b99d173e31dd411&v=4" alt="profile picture">
+					<div class="card-body">
+						<h4 class="card-title">Joey Picca</h4>
+						<p class="card-text">Meteorologist, Data Scientist, and learner of Machine Learning.</p>
+						<a href="https://github.com/jpicca" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/jpicca/" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-linkedin"></i></a>		
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="card text-center">
+					<img class="card-img-top us" src="https://ca.slack-edge.com/TP684H8C9-UPX7U2LKV-c9f7a26163f7-512"
+						alt="profile picture">
+					<div class="card-body">
+						<h4 class="card-title">Chris Armstrong</h4>
+						<p class="card-text">Principal Architect / IT Security Operations, student of Data Science.</p>
+						<a href="https://github.com/4Reference" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/christopher-armstrong-66260044/" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="card text-center">
+					<img class="card-img-top us" src="https://ca.slack-edge.com/TP684H8C9-UPYSS42M7-23ac79fd3119-512"
+						alt="profile picture">
+					<div class="card-body">
+						<h4 class="card-title">Shane Gatenby</h4>
+						<p class="card-text">Data Analyst with several years of industry experience. </p>
+						<a href="https://github.com/shanergy" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/shane-gatenby/" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="card text-center">
+					<img class="card-img-top us" 
+						src="https://avatars0.githubusercontent.com/u/56401348?s=400&u=699af4199a33a3ad2dc7b437f187d3f8f81966f5&v=4"
+						alt="profile picture">
+					<div class="card-body">
+						<h4 class="card-title">Ming Gao</h4>
+						<p class="card-text">Postdoctoral Researcher UT Southwestern Medical Center, Data Analyst. </p>
+						<a href="https://github.com/gaom001" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/ming-gao-0562a132/" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="card text-center">
+					<img class="card-img-top us"
+						src="https://avatars1.githubusercontent.com/u/56699536?s=400&u=970762968e29dec3e0ba1cefb2adb62de45a15ec&v=4"
+						alt="profile picture">
+					<div class="card-body">
+						<h4 class="card-title">Austin Potts</h4>
+						<p class="card-text">Data Analyst, IT Hosting Intern, Dog Enthusiast</p>
+						<a href="https://github.com/Austin-Potts" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/austinpotts/" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="card text-center">
+					<img class="card-img-top us"
+						src="https://avatars3.githubusercontent.com/u/57381750?s=460&u=13fade5a3a0ec4dbb4939ba3d734af0bce6295e3&v=4"
+						alt="profile picture">
+					<div class="card-body">
+						<h4 class="card-title">Lansing Westlake</h4>
+						<p class="card-text">VP-Merchant Banking, former Auditor, aspiring Data Scientist</p>
+						<a href="https://github.com/Lpwestlake" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/lansing-westlake-4651b044/" target="_blank" class="btn btn-outline-secondary"><i
+								class="fab fa-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+	<!--- Footer -->
+	<footer>
+		<div class= "container-fluid padding">
+			<div class = "row text-center">
+				<div class="col-md-6">
+					<hr class="light"> 
+					<h5>Resources Used</h5>
+					<hr class="light"> 
+					<p><a class="footer-text" href = "https://www.w3schools.com/bootstrap4/" target="_blank">Bootstrap 4 Tutorial by W3 Schools</a></p>
+					<p><a class="footer-text" href = "https://towardsdatascience.com/reinforcement-learning-solving-blackjack-5e31a7fb371f" target="_blank">Reinforcement Learning Blackjack Article</a></p>
+					<p><a class="footer-text" href = "https://ipython.readthedocs.io/en/stable/index.html" target="_blank">Python Read the Docs</a></p>
+				</div>
+				<div class="col-md-6">
+					<hr class="light"> 
+					<h5>Inspirational Projects</h5>
+					<hr class="light"> 
+					<p ><a class="footer-text" href = "https://github.com/GregSommerville/machine-learning-blackjack-solution" target="_blank">Greg Sommerville: ML-Blackjack</a></p>
+					<p ><a class="footer-text" href = "https://github.com/justdoit7724/Blackjack_BasicMachineLearning" target="_blank">Kim Changjun: Blackjack Basic ML</a></p>
+					<p ><a class="footer-text" href = "http://www.codershaven.com/hackathon-training-a-blackjack-ai/" target="_blank">Training a Blackjack AI</a></p>
+				</div>
+				<div class="col-12">
+					<hr class="light-100"> 
+					<h5>&copy; Dream Team November 2019 DS Cohort</h5>
+				</div>
+	</div>
+	</div>
+	</footer>
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+<script src="./controller.js"></script>
+<script src="./chart.js"></script>
+</html>
