@@ -1,7 +1,7 @@
 # Dependencies
 import numpy as np
 from flask_cors import CORS
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import pickle
 import random
 
@@ -212,24 +212,6 @@ def makeSuggestion(state,actionCount):
 
     currentWinProb = round(totalWins/totalGames,4)*100
     final_dict['winProb'] = currentWinProb
-
-    # New part above / old part below
-
-    #totalWins = stateOutcome[0][0] + stateOutcome[1][0] + stateOutcome[2][0] + stateOutcome[3][0] 
-    #totalGames = stateOutcome[0][1] + stateOutcome[1][1] + stateOutcome[2][1] + stateOutcome[3][1]
-
-    #global final_dict
-
-    #final_dict['actions'][0]['winProb'] = weirdDivision(stateOutcome[0][0],stateOutcome[0][1])*100
-    #final_dict['actions'][1]['winProb'] = weirdDivision(stateOutcome[1][0],stateOutcome[1][1])*100
-    #final_dict['actions'][2]['winProb'] = weirdDivision(stateOutcome[2][0],stateOutcome[2][1])*100
-    #final_dict['actions'][3]['winProb'] = weirdDivision(stateOutcome[3][0],stateOutcome[3][1])*100
-
-
-    # Override probability calc if splits are unavailable
-    #global split_potential
-    #if split_potential == 0:
-    #    final_dict['actions'][3]['winProb'] = 0
 
     # Assess best choice
     qVals = policy[state]

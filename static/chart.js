@@ -21,7 +21,7 @@ const yAxis = d3.axisLeft(y).ticks(4)
 
 svg.attr("width", width)
     .attr("height", height)
-    .attr("font-family", "sans-serif")
+    .attr("font-family", "Poppins")
     .attr("font-size", "10")
     .attr("text-anchor", "end");
 
@@ -31,7 +31,7 @@ const bar = svg.selectAll("g")
     .attr("transform", (d, i) => `translate(${margin.left},${y(actions[i])})`);
 
 bar.append("rect")
-    .attr("fill", "steelblue")
+    .attr("fill", "gray")
     .attr("width", x)
     .attr("height", y.bandwidth() - 1);
 
