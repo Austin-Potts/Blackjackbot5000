@@ -34,10 +34,6 @@ html, body {
   background-image: none;
 }
 
-.viz {
-  left:24%;
-}
-
 .carousel-control-next-icon:after
 {
   content: '>';
