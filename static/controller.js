@@ -85,7 +85,7 @@ function startGame() {
 
     // Send signal to flask to begin game
 
-    d3.json(`http://127.0.0.1:5000/new/0/${value}`).then(function(data) {
+    d3.json(`/new/0/${value}`).then(function(data) {
 
         // Get player cards
         let player_cards = data['cards_dealt']['player']
@@ -156,7 +156,7 @@ function action(action) {
     buttonList[2].setAttribute('disabled',true)
     buttonList[3].setAttribute('disabled',true)
 
-    d3.json(`http://127.0.0.1:5000/continue/${action}/${value}`).then(function(data) {
+    d3.json(`/continue/${action}/${value}`).then(function(data) {
 
         // Non split actions
 
