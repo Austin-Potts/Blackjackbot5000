@@ -44,7 +44,7 @@ function refreshBoard() {
 
     updateChart([0,0,0,0])
 
-    d3.select('img.down').attr('src','./static/card_images/green_back.png')
+    d3.select('img.down').attr('src','../static/card_images/green_back.png')
 
     d3.select('.hand1').style('background-color','rgba(255, 255, 255, 0.05)')
     d3.select('.hand2').style('background-color','rgba(255, 255, 255, 0.05)')
@@ -85,7 +85,7 @@ function startGame() {
 
     // Send signal to flask to begin game
 
-    d3.json(`/new/0/${value}`).then(function(data) {
+    d3.json(`http://127.0.0.1:5000/new/0/${value}`).then(function(data) {
 
         // Get player cards
         let player_cards = data['cards_dealt']['player']
@@ -94,7 +94,7 @@ function startGame() {
         for (i=0;i<player_cards.length;i++) {
             suit = suitList[Math.floor(Math.random() * 4)]
 
-            playerCardSlots[i].setAttribute('src',`./static/card_images/${player_cards[i]}${suit}.png`)
+            playerCardSlots[i].setAttribute('src',`../static/card_images/${player_cards[i]}${suit}.png`)
             playerCardSlots[i].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
         }
 
@@ -108,7 +108,7 @@ function startGame() {
         // Make viz for only first card
         suit = suitList[Math.floor(Math.random() * 4)]
 
-        dealerCardSlots[0].setAttribute('src',`./static/card_images/${dealer_cards[0]}${suit}.png`)
+        dealerCardSlots[0].setAttribute('src',`../static/card_images/${dealer_cards[0]}${suit}.png`)
         dealerCardSlots[0].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
         dealerCardSlots[1].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
 
@@ -156,7 +156,7 @@ function action(action) {
     buttonList[2].setAttribute('disabled',true)
     buttonList[3].setAttribute('disabled',true)
 
-    d3.json(`/continue/${action}/${value}`).then(function(data) {
+    d3.json(`http://127.0.0.1:5000/continue/${action}/${value}`).then(function(data) {
 
         // Non split actions
 
@@ -168,13 +168,13 @@ function action(action) {
             // Append new card image for player
             if (whichPlayer == 'player') {
                 let slot = playerCardCount
-                playerCardSlots[slot].setAttribute('src',`./static/card_images/${player_card}${suit}.png`)
+                playerCardSlots[slot].setAttribute('src',`../static/card_images/${player_card}${suit}.png`)
                 playerCardSlots[slot].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
 
                 playerCardCount++
             } else {
                 let slot = player2CardCount
-                playerCard2Slots[slot].setAttribute('src',`./static/card_images/${player_card}${suit}.png`)
+                playerCard2Slots[slot].setAttribute('src',`../static/card_images/${player_card}${suit}.png`)
                 playerCard2Slots[slot].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
 
                 player2CardCount++
@@ -202,14 +202,14 @@ function action(action) {
             let player_card = data['cards_dealt']['player'].slice(-1)
             let suit = suitList[Math.floor(Math.random() * 4)]
 
-            playerCardSlots[1].setAttribute('src',`./static/card_images/${player_card}${suit}.png`)
+            playerCardSlots[1].setAttribute('src',`../static/card_images/${player_card}${suit}.png`)
             
 
             // Update second card of second hand
             let player2_card = data['cards_dealt']['player2'].slice(-1)
             suit = suitList[Math.floor(Math.random() * 4)]
 
-            playerCard2Slots[1].setAttribute('src',`./static/card_images/${player2_card}${suit}.png`)
+            playerCard2Slots[1].setAttribute('src',`../static/card_images/${player2_card}${suit}.png`)
             playerCard2Slots[1].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
 
             player2CardCount = 2
@@ -224,7 +224,7 @@ function action(action) {
             for (i=1;i<dealer_cards.length;i++) {
                 suit = suitList[Math.floor(Math.random() * 4)]
     
-                dealerCardSlots[i].setAttribute('src',`./static/card_images/${dealer_cards[i]}${suit}.png`)
+                dealerCardSlots[i].setAttribute('src',`../static/card_images/${dealer_cards[i]}${suit}.png`)
                 dealerCardSlots[i].setAttribute('style','opacity:1; max-width: 100%; max-height: 100%')
             }
 
