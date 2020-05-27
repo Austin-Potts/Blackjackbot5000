@@ -31,7 +31,7 @@
 						<a class="nav-link" href="#teamSection">Team</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="#gamesection">Try the App!</a>
+						<a class="nav-link" data-toggle="collapse" data-target="#gamesection" href="#gamesection">Try the App!</a>
 					</li>
 				</ul>
 			</div>
@@ -192,17 +192,14 @@
 	<hr class="hr-100">
 
 
-	<!--Columns/main body-->
-	<div class="container-fluid padding">
-		<div class="row padding">
-			<div class="col-lg-6">
-				<h2>Test Header</h2>
-				<p>Test paragraph 1</p>
-				<p>Test paragraph 2</p>
-				<p>Test paragraph 3</p>
-			</div>
 
-			<div class="container-fluid padding" id="gamesection">
+			
+			<!--Hidden Game Button-->
+			<div class="col-12 text-center">
+			<button class="btn btn-outline-secondary btn-lg text-center gamebutton" data-toggle="collapse" data-target="#gamesection">Click to Open the App Interface</button>
+		</div>
+			<!--Card Game Code Dont Touch-->
+			<div class="container-fluid padding collapse" id="gamesection">
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="row">
@@ -416,6 +413,8 @@
 		</div>
 	</div>
 
+
+	<!--Fixed Background (delicate, needs adjusting)-->
 	<figure>
 		<div class="fixed-wrap">
 			<div id="fixed">
