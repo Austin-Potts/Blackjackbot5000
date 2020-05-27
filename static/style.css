@@ -76,10 +76,6 @@ li.slidebars.active {
   border: 1px solid #383740;
 }
 
-.gamebutton {
-  transform: translateZ(0);
-}
-
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
