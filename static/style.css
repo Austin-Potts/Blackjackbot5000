@@ -65,12 +65,12 @@ li.slidebars{
   background-color:black;
 }
 li.slidebars.active {
-  background-color: #8aa6a2;
+  background-color: #383740;
 }
 
 .btn-outline-secondary:hover {
-  background-color: #8aa6a2;
-  border: 1px solid #8aa6a2;
+  background-color: #383740;
+  border: 1px solid #383740;
 }
 .btn-primary:disabled {
   color: white;
@@ -78,8 +78,8 @@ li.slidebars.active {
 }
 
 .btn-lg:hover {
-  background-color:#8aa6a2 ;
-  border: 1px solid #8aa6a2;
+  background-color:#383740 ;
+  border: 1px solid #383740;
 }
 
 .btn.cards
@@ -184,7 +184,7 @@ color: #563d7c;
 }
 
 footer {
-  background-color: #8aa6a2;
+  background-color: #383740;
   /*change color to change text color*/ 
   color: white;
   padding-top: 2rem;
