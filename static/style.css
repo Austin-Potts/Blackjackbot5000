@@ -76,19 +76,14 @@ li.slidebars.active {
   color: white;
   border-color: black;
 }
+.btn-primary:disabled {
+  background-color: white;
+  opacity: 0;
+}
 
 .btn-lg:hover {
   background-color:#383740 ;
   border: 1px solid #383740;
-}
-
-.btn.cards
-
-#inputfname {
-  color: black;
-}
-.rect{
-  color: gray;
 }
 
 .jumbotron {
