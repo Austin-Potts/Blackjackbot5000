@@ -35,6 +35,11 @@ html, body {
   padding-right:5%;
   padding-left:5%;
 }
+
+.tableauPlaceholder {
+  margin-left: 225px;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
