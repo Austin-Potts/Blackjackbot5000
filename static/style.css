@@ -32,8 +32,8 @@ html, body {
   padding-left:1%;
 }
 .viz{
-  padding-right:5%;
-  padding-left:5%;
+  padding-right:1%;
+  padding-left:1%;
 }
 
 .tableauPlaceholder {
@@ -216,10 +216,6 @@ hr.hr-50 {
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
-
-
-
-
 
 
 /*---Media Queries --*/
