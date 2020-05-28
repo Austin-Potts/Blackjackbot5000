@@ -22,7 +22,7 @@
 #### *Key Files:*
 1) [**Reinforcement Learning:**](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL)
     * [*blackJackReinforcement_final_v1.ipynb*](https://github.com/Austin-Potts/Blackjackbot5000/blob/master/final_RLandEDA/BlackJackRL/blackJackReinforcement_final_v1.ipynb)
-        *  **Important Instructions:** [*INSTRUCTION_README.md*](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL/INSTRUCTION_README.md)
+        *  **Important Instructions:** [*INSTRUCTIONAL README.md*](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL/README.md)
         * **Outputs:**
             * *Q_policy*
             * *win_pct*
@@ -43,4 +43,4 @@
 ----
 
 ----
-* *Please see the [INSTRUCTION_README.md](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL/INSTRUCTION_README.md) file located in the [/final_RLandEDA/BlackJackRL/](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL) directory for notes and instruction for using the blackJackReinforcement jupyter notebook file*
+* *Please see the [INSTRUCTIONAL README.md](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL/README.md) file located in the [/final_RLandEDA/BlackJackRL/](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL) directory for notes and instruction for using the blackJackReinforcement jupyter notebook file*
