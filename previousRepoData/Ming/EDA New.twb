@@ -1,0 +1,2033 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <CustomReferenceLineTooltips />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='blackJackGameData' inline='true' name='federated.07zs5ib0jdqllv12hpckv05cfztr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='blackJackGameData' name='textscan.1haan4r0h6ey2y11hiq7e1guk82j'>
+            <connection class='textscan' directory='C:/Users/gaom0/OneDrive/Desktop/SD' filename='blackJackGameData.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1haan4r0h6ey2y11hiq7e1guk82j' name='blackJackGameData.csv' table='[blackJackGameData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='lr_er_combo' ordinal='0' />
+            <column datatype='real' name='learningRate' ordinal='1' />
+            <column datatype='real' name='explorationRate' ordinal='2' />
+            <column datatype='integer' name='playerHandValue' ordinal='3' />
+            <column datatype='integer' name='dealerUpCardValue' ordinal='4' />
+            <column datatype='boolean' name='usableAce' ordinal='5' />
+            <column datatype='integer' name='standGamesWon' ordinal='6' />
+            <column datatype='integer' name='standTotalGames' ordinal='7' />
+            <column datatype='real' name='standAvgWinRate' ordinal='8' />
+            <column datatype='integer' name='hitGamesWon' ordinal='9' />
+            <column datatype='integer' name='hitTotalGames' ordinal='10' />
+            <column datatype='real' name='hitAvgWinRate' ordinal='11' />
+            <column datatype='integer' name='doubleDownGamesWon' ordinal='12' />
+            <column datatype='integer' name='doubleDownTotalGames' ordinal='13' />
+            <column datatype='real' name='doubleDownAvgWinRate' ordinal='14' />
+            <column datatype='integer' name='splitGamesWon' ordinal='15' />
+            <column datatype='integer' name='splitTotalGames' ordinal='16' />
+            <column datatype='real' name='splitAvgWinRate' ordinal='17' />
+            <column datatype='string' name='joinKey' ordinal='18' />
+            <column datatype='integer' name='minBet_bet' ordinal='19' />
+            <column datatype='real' name='minBet_standQvalue' ordinal='20' />
+            <column datatype='real' name='minBet_hitQvalue' ordinal='21' />
+            <column datatype='real' name='minBet_doubleDownQvalue' ordinal='22' />
+            <column datatype='real' name='minBet_splitQvalue' ordinal='23' />
+            <column datatype='integer' name='midBet_bet' ordinal='24' />
+            <column datatype='real' name='midBet_standQvalue' ordinal='25' />
+            <column datatype='real' name='midBet_hitQvalue' ordinal='26' />
+            <column datatype='real' name='midBet_doubleDownQvalue' ordinal='27' />
+            <column datatype='real' name='midBet_splitQvalue' ordinal='28' />
+            <column datatype='integer' name='maxBet_bet' ordinal='29' />
+            <column datatype='real' name='maxBet_standQvalue' ordinal='30' />
+            <column datatype='real' name='maxBet_hitQvalue' ordinal='31' />
+            <column datatype='real' name='maxBet_doubleDownQvalue' ordinal='32' />
+            <column datatype='real' name='maxBet_splitQvalue' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lr_er_combo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lr_er_combo]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>lr_er_combo</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>learningRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[learningRate]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>learningRate</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>explorationRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[explorationRate]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>explorationRate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playerHandValue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[playerHandValue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>playerHandValue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dealerUpCardValue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dealerUpCardValue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>dealerUpCardValue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usableAce</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[usableAce]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>usableAce</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>standGamesWon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[standGamesWon]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>standGamesWon</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>standTotalGames</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[standTotalGames]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>standTotalGames</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>standAvgWinRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[standAvgWinRate]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>standAvgWinRate</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hitGamesWon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hitGamesWon]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>hitGamesWon</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hitTotalGames</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hitTotalGames]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>hitTotalGames</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hitAvgWinRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hitAvgWinRate]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>hitAvgWinRate</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doubleDownGamesWon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[doubleDownGamesWon]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>doubleDownGamesWon</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doubleDownTotalGames</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[doubleDownTotalGames]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>doubleDownTotalGames</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>doubleDownAvgWinRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[doubleDownAvgWinRate]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>doubleDownAvgWinRate</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>splitGamesWon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[splitGamesWon]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>splitGamesWon</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>splitTotalGames</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[splitTotalGames]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>splitTotalGames</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>splitAvgWinRate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[splitAvgWinRate]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>splitAvgWinRate</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>joinKey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[joinKey]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>joinKey</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minBet_bet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minBet_bet]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>minBet_bet</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minBet_standQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minBet_standQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>minBet_standQvalue</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minBet_hitQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minBet_hitQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>minBet_hitQvalue</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minBet_doubleDownQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minBet_doubleDownQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>minBet_doubleDownQvalue</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minBet_splitQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minBet_splitQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>minBet_splitQvalue</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>midBet_bet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[midBet_bet]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>midBet_bet</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>midBet_standQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[midBet_standQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>midBet_standQvalue</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>midBet_hitQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[midBet_hitQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>midBet_hitQvalue</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>midBet_doubleDownQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[midBet_doubleDownQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>midBet_doubleDownQvalue</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>midBet_splitQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[midBet_splitQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>midBet_splitQvalue</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maxBet_bet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[maxBet_bet]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>maxBet_bet</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maxBet_standQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[maxBet_standQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>maxBet_standQvalue</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maxBet_hitQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[maxBet_hitQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>maxBet_hitQvalue</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maxBet_doubleDownQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[maxBet_doubleDownQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>maxBet_doubleDownQvalue</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maxBet_splitQvalue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[maxBet_splitQvalue]</local-name>
+            <parent-name>[blackJackGameData.csv]</parent-name>
+            <remote-alias>maxBet_splitQvalue</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]&quot;' value='Double Down' />
+          <alias key='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;' value='Hit' />
+          <alias key='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;' value='Split' />
+          <alias key='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]&quot;' value='Stand' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Dealer Up Card Value' datatype='integer' name='[dealerUpCardValue]' role='measure' type='quantitative' />
+      <column caption='Double Down Avg Win Rate' datatype='real' name='[doubleDownAvgWinRate]' role='measure' type='quantitative' />
+      <column caption='Double Down Games Won' datatype='integer' name='[doubleDownGamesWon]' role='measure' type='quantitative' />
+      <column caption='Double Down Total Games' datatype='integer' name='[doubleDownTotalGames]' role='measure' type='quantitative' />
+      <column caption='Exploration Rate' datatype='real' name='[explorationRate]' role='measure' type='quantitative' />
+      <column caption='Hit Avg Win Rate' datatype='real' name='[hitAvgWinRate]' role='measure' type='quantitative' />
+      <column caption='Hit Games Won' datatype='integer' name='[hitGamesWon]' role='measure' type='quantitative' />
+      <column caption='Hit Total Games' datatype='integer' name='[hitTotalGames]' role='measure' type='quantitative' />
+      <column caption='Join Key' datatype='string' name='[joinKey]' role='dimension' type='nominal' />
+      <column caption='Learning Rate' datatype='real' name='[learningRate]' role='measure' type='quantitative' />
+      <column caption='Lr Er Combo' datatype='string' name='[lr_er_combo]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;0.05_0.05&quot;' value='RL(0.05_0.05)' />
+          <alias key='&quot;random&quot;' value='Random' />
+        </aliases>
+      </column>
+      <column caption='maxBet bet' datatype='integer' name='[maxBet_bet]' role='measure' type='quantitative' />
+      <column caption='maxBet doubleDownQvalue' datatype='real' name='[maxBet_doubleDownQvalue]' role='measure' type='quantitative' />
+      <column caption='maxBet hitQvalue' datatype='real' name='[maxBet_hitQvalue]' role='measure' type='quantitative' />
+      <column caption='maxBet splitQvalue' datatype='real' name='[maxBet_splitQvalue]' role='measure' type='quantitative' />
+      <column caption='maxBet standQvalue' datatype='real' name='[maxBet_standQvalue]' role='measure' type='quantitative' />
+      <column caption='midBet bet' datatype='integer' name='[midBet_bet]' role='measure' type='quantitative' />
+      <column caption='midBet doubleDownQvalue' datatype='real' name='[midBet_doubleDownQvalue]' role='measure' type='quantitative' />
+      <column caption='midBet hitQvalue' datatype='real' name='[midBet_hitQvalue]' role='measure' type='quantitative' />
+      <column caption='midBet splitQvalue' datatype='real' name='[midBet_splitQvalue]' role='measure' type='quantitative' />
+      <column caption='midBet standQvalue' datatype='real' name='[midBet_standQvalue]' role='measure' type='quantitative' />
+      <column caption='minBet bet' datatype='integer' name='[minBet_bet]' role='measure' type='quantitative' />
+      <column caption='minBet doubleDownQvalue' datatype='real' name='[minBet_doubleDownQvalue]' role='measure' type='quantitative' />
+      <column caption='minBet hitQvalue' datatype='real' name='[minBet_hitQvalue]' role='measure' type='quantitative' />
+      <column caption='minBet splitQvalue' datatype='real' name='[minBet_splitQvalue]' role='measure' type='quantitative' />
+      <column caption='minBet standQvalue' datatype='real' name='[minBet_standQvalue]' role='measure' type='quantitative' />
+      <column caption='Player Hand Value' datatype='integer' name='[playerHandValue]' role='measure' type='quantitative' />
+      <column caption='Split Avg Win Rate' datatype='real' name='[splitAvgWinRate]' role='measure' type='quantitative' />
+      <column caption='Split Games Won' datatype='integer' name='[splitGamesWon]' role='measure' type='quantitative' />
+      <column caption='Split Total Games' datatype='integer' name='[splitTotalGames]' role='measure' type='quantitative' />
+      <column caption='Stand Avg Win Rate' datatype='real' name='[standAvgWinRate]' role='measure' type='quantitative' />
+      <column caption='Stand Games Won' datatype='integer' name='[standGamesWon]' role='measure' type='quantitative' />
+      <column caption='Stand Total Games' datatype='integer' name='[standTotalGames]' role='measure' type='quantitative' />
+      <column caption='Usable Ace' datatype='boolean' name='[usableAce]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='false' value='A=1' />
+          <alias key='true' value='A=11' />
+        </aliases>
+      </column>
+      <column-instance column='[doubleDownAvgWinRate]' derivation='Avg' name='[avg:doubleDownAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hitAvgWinRate]' derivation='Avg' name='[avg:hitAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[splitAvgWinRate]' derivation='Avg' name='[avg:splitAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[standAvgWinRate]' derivation='Avg' name='[avg:standAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[lr_er_combo]' derivation='None' name='[none:lr_er_combo:nk]' pivot='key' type='nominal' />
+      <column-instance column='[doubleDownAvgWinRate]' derivation='Sum' name='[sum:doubleDownAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hitAvgWinRate]' derivation='Sum' name='[sum:hitAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[splitAvgWinRate]' derivation='Sum' name='[sum:splitAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[standAvgWinRate]' derivation='Sum' name='[sum:standAvgWinRate:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.115869' measure-ordering='alphabetic' measure-percentage='0.884131' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[sum:doubleDownAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[sum:standAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[sum:splitAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[sum:hitAvgWinRate:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:lr_er_combo:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;0.3_0.1&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;0.3_0.5&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;0.5_0.05&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;0.05_0.1&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1_1&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;random&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;0.5_1&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;0.5_0.5&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;0.3_0.05&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;0.1_0.5&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;0.3_0.3&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;0.1_0.1&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1_0.3&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1_0.1&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;0.1_0.05&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;0.5_0.1&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;0.05_0.3&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;0.05_0.05&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;0.05_1&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;0.05_0.5&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;0.1_1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1_0.5&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;0.3_1&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;0.5_0.3&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;0.1_0.3&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1_0.05&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='A value'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='blackJackGameData' name='federated.07zs5ib0jdqllv12hpckv05cfztr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07zs5ib0jdqllv12hpckv05cfztr'>
+            <column-instance column='[doubleDownAvgWinRate]' derivation='Avg' name='[avg:doubleDownAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hitAvgWinRate]' derivation='Avg' name='[avg:hitAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[splitAvgWinRate]' derivation='Avg' name='[avg:splitAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[standAvgWinRate]' derivation='Avg' name='[avg:standAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column caption='Double Down Avg Win Rate' datatype='real' name='[doubleDownAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Hit Avg Win Rate' datatype='real' name='[hitAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Lr Er Combo' datatype='string' name='[lr_er_combo]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;0.05_0.05&quot;' value='RL(0.05_0.05)' />
+                <alias key='&quot;random&quot;' value='Random' />
+              </aliases>
+            </column>
+            <column-instance column='[lr_er_combo]' derivation='None' name='[none:lr_er_combo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[usableAce]' derivation='None' name='[none:usableAce:nk]' pivot='key' type='nominal' />
+            <column caption='Split Avg Win Rate' datatype='real' name='[splitAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Stand Avg Win Rate' datatype='real' name='[standAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Usable Ace' datatype='boolean' name='[usableAce]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='false' value='A=1' />
+                <alias key='true' value='A=11' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]&quot;</bucket>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;</bucket>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]&quot;</bucket>
+              <bucket>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:lr_er_combo:nk]' member='&quot;0.05_0.05&quot;' />
+              <groupfilter function='member' level='[none:lr_er_combo:nk]' member='&quot;random&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</column>
+            <column>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]' scope='rows' value='Win Percentage (%)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='#000000' />
+            <format attr='color' data-class='subtotal' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='total' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='#000000' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='bold' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]' value='p0%' />
+            <format attr='font-size' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='12' />
+            <format attr='font-size' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f0f1e8' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='2' />
+            <format attr='band-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]' value='Actions' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</rows>
+        <cols>([federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk] / ([federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names] / [federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]))</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0.05_0.05&quot;</value>
+                <value>true</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;</value>
+                <value>0.40975500000000009</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;random&quot;</value>
+                <value>true</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;</value>
+                <value>0.34459500000000015</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;random&quot;</value>
+                <value>false</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;</value>
+                <value>0.15219999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0.05_0.05&quot;</value>
+                <value>false</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;</value>
+                <value>0.17179499999999995</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;random&quot;</value>
+                <value>false</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;</value>
+                <value>0.21166000000000007</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0.05_0.05&quot;</value>
+                <value>false</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&quot;</value>
+                <value>0.2764299999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;random&quot;</value>
+                <value>true</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;</value>
+                <value>0.021484999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+                  <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;0.05_0.05&quot;</value>
+                <value>true</value>
+                <value>&quot;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&quot;</value>
+                <value>0.02367</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{51CEC7B1-C3AA-4DEF-9555-12CC0F0C1D02}' />
+    </worksheet>
+    <worksheet name='Dealer Up Card Value'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='blackJackGameData' name='federated.07zs5ib0jdqllv12hpckv05cfztr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07zs5ib0jdqllv12hpckv05cfztr'>
+            <column-instance column='[doubleDownAvgWinRate]' derivation='Avg' name='[avg:doubleDownAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hitAvgWinRate]' derivation='Avg' name='[avg:hitAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[splitAvgWinRate]' derivation='Avg' name='[avg:splitAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[standAvgWinRate]' derivation='Avg' name='[avg:standAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column caption='Dealer Up Card Value' datatype='integer' name='[dealerUpCardValue]' role='measure' type='quantitative' />
+            <column caption='Double Down Avg Win Rate' datatype='real' name='[doubleDownAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Hit Avg Win Rate' datatype='real' name='[hitAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Lr Er Combo' datatype='string' name='[lr_er_combo]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;0.05_0.05&quot;' value='RL(0.05_0.05)' />
+                <alias key='&quot;random&quot;' value='Random' />
+              </aliases>
+            </column>
+            <column-instance column='[dealerUpCardValue]' derivation='None' name='[none:dealerUpCardValue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lr_er_combo]' derivation='None' name='[none:lr_er_combo:nk]' pivot='key' type='nominal' />
+            <column caption='Split Avg Win Rate' datatype='real' name='[splitAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Stand Avg Win Rate' datatype='real' name='[standAvgWinRate]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:lr_er_combo:nk]' member='&quot;0.05_0.05&quot;' />
+              <groupfilter function='member' level='[none:lr_er_combo:nk]' member='&quot;random&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:dealerUpCardValue:qk]' field-type='quantitative' major-origin='0' major-spacing='1' max='11' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' scope='cols' value='Avg. Win% (Stand)' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' scope='cols' value='Avg. Win% (Hit)' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' scope='cols' value='Avg. Win% (Double Down)' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' scope='cols' value='Avg. Win% (Split)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='10' />
+            <format attr='font-weight' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='bold' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' value='p0%' />
+            <format attr='text-orientation' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#ffffff' />
+            <format attr='fill-below' id='refline0' value='#d5e1d4' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#ffd7d0' />
+            <format attr='fill-above' id='refline4' value='#00000000' />
+            <format attr='fill-below' id='refline4' value='#c9cdff' />
+            <format attr='fill-above' id='refline6' value='#00000000' />
+            <format attr='fill-below' id='refline6' value='#fff9c5' />
+            <format attr='stroke-size' id='refline4' value='2' />
+            <format attr='line-visibility' id='refline4' value='on' />
+            <format attr='line-pattern-only' id='refline4' value='solid' />
+            <format attr='stroke-color' id='refline4' value='#4e79a7' />
+            <format attr='stroke-color' id='refline2' value='#e15759' />
+            <format attr='stroke-color' id='refline6' value='#e15759' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='text-format' id='refline0' value='p0.0%' />
+            <format attr='text-format' id='refline2' value='p0.0%' />
+            <format attr='text-format' id='refline4' value='p0.0%' />
+            <format attr='text-format' id='refline6' value='p0.0%' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='Simulation Condition ' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='value' probability='95' scope='per-pane' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' z-order='1' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' enable-instant-analytics='true' formula='average' id='refline2' label-type='value' probability='95' scope='per-pane' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' z-order='2' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' enable-instant-analytics='true' formula='average' id='refline4' label-type='value' probability='95' scope='per-pane' tooltip='&lt;Computation&gt;&lt;Value&gt;' tooltip-type='custom' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' z-order='3' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' enable-instant-analytics='true' formula='average' id='refline6' label-type='value' probability='95' scope='per-pane' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' z-order='4' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Dealer Up Card Value:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:dealerUpCardValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win Percentage:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Dealer Up Card Value:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:dealerUpCardValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win Percentage (Hit):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Dealer Up Card Value:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:dealerUpCardValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win Rercentage(Double Down):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Dealer Up Card Value:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:dealerUpCardValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win Percentage(Split ):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk] * [federated.07zs5ib0jdqllv12hpckv05cfztr].[none:dealerUpCardValue:qk])</rows>
+        <cols>([federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk] + ([federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk] + ([federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk] + [federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk])))</cols>
+      </table>
+      <simple-id uuid='{45210E56-5803-48D3-BCC5-949C197BFC0A}' />
+    </worksheet>
+    <worksheet name='Player Hand Values'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Player Hand Values</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='blackJackGameData' name='federated.07zs5ib0jdqllv12hpckv05cfztr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07zs5ib0jdqllv12hpckv05cfztr'>
+            <column-instance column='[doubleDownAvgWinRate]' derivation='Avg' name='[avg:doubleDownAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hitAvgWinRate]' derivation='Avg' name='[avg:hitAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[splitAvgWinRate]' derivation='Avg' name='[avg:splitAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[standAvgWinRate]' derivation='Avg' name='[avg:standAvgWinRate:qk]' pivot='key' type='quantitative' />
+            <column caption='Double Down Avg Win Rate' datatype='real' name='[doubleDownAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Hit Avg Win Rate' datatype='real' name='[hitAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Lr Er Combo' datatype='string' name='[lr_er_combo]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;0.05_0.05&quot;' value='RL(0.05_0.05)' />
+                <alias key='&quot;random&quot;' value='Random' />
+              </aliases>
+            </column>
+            <column-instance column='[lr_er_combo]' derivation='None' name='[none:lr_er_combo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[playerHandValue]' derivation='None' name='[none:playerHandValue:qk]' pivot='key' type='quantitative' />
+            <column caption='Player Hand Value' datatype='integer' name='[playerHandValue]' role='measure' type='quantitative' />
+            <column caption='Split Avg Win Rate' datatype='real' name='[splitAvgWinRate]' role='measure' type='quantitative' />
+            <column caption='Stand Avg Win Rate' datatype='real' name='[standAvgWinRate]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:lr_er_combo:nk]' member='&quot;0.05_0.05&quot;' />
+              <groupfilter function='member' level='[none:lr_er_combo:nk]' member='&quot;random&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk]' scope='rows' value='Player Hand Values' />
+            <encoding attr='space' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk]' field-type='quantitative' major-origin='0' major-spacing='1' max='22' min='1' minor-origin='0' minor-show='false' minor-spacing='1.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' scope='cols' value='Avg. Win % ( Stand)' />
+            <encoding attr='space' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.29999999999999999' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' scope='cols' value='Avg. Win % ( Hit)' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' scope='cols' value='Avg. Win% (Double Down)' />
+            <format attr='title' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' scope='cols' value='Avg.Win% ( Split)' />
+            <encoding attr='space' class='0' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' field-type='quantitative' max='0.29999999999999999' min='0.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-orientation' data-class='subtotal' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' value='p0%' />
+            <format attr='font-weight' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='bold' />
+            <format attr='color' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='#1b1b1b' />
+            <format attr='font-size' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='10' />
+            <format attr='text-orientation' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline0' value='#d5e1d4' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-size' id='refline0' value='2' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dashed' />
+            <format attr='stroke-size' id='refline2' value='2' />
+            <format attr='stroke-color' id='refline2' value='#e15759' />
+            <format attr='fill-color' id='refline4' value='#c9cdff' />
+            <format attr='line-visibility' id='refline4' value='on' />
+            <format attr='line-pattern-only' id='refline4' value='dashed' />
+            <format attr='stroke-color' id='refline6' value='#e15759' />
+            <format attr='line-visibility' id='refline6' value='on' />
+            <format attr='line-pattern-only' id='refline6' value='dashed' />
+            <format attr='fill-color' id='refline2' value='#ffd7d0' />
+            <format attr='stroke-color' id='refline0' value='#4e79a7' />
+            <format attr='stroke-color' id='refline4' value='#4e79a7' />
+            <format attr='fill-color' id='refline6' value='#fff9c5' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' value='Simulation Condition ' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' enable-instant-analytics='true' formula='min' id='refline0' label-type='value' paired-id='refline1' scope='per-pane' symmetric='false' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' z-order='6' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' enable-instant-analytics='true' formula='max' id='refline1' label-type='value' paired-id='refline0' scope='per-pane' symmetric='false' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]' z-order='2' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' enable-instant-analytics='true' formula='min' id='refline2' label-type='value' paired-id='refline3' scope='per-pane' symmetric='false' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' z-order='1' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' enable-instant-analytics='true' formula='max' id='refline3' label-type='value' paired-id='refline2' scope='per-pane' symmetric='false' tooltip='&lt;Computation&gt;&lt;Value&gt;' tooltip-type='custom' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]' z-order='3' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' enable-instant-analytics='false' formula='min' id='refline4' label-type='value' paired-id='refline5' scope='per-pane' symmetric='false' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' z-order='4' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' enable-instant-analytics='false' formula='max' id='refline5' label-type='value' paired-id='refline4' scope='per-pane' symmetric='false' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]' z-order='4' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' enable-instant-analytics='true' formula='min' id='refline6' label-type='none' paired-id='refline7' scope='per-pane' symmetric='false' tooltip-type='none' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' z-order='5' />
+            <reference-line axis-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' enable-instant-analytics='true' formula='max' id='refline7' label-type='value' paired-id='refline6' scope='per-pane' symmetric='false' value-column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]' z-order='5' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Player Hand Value:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Win Percentage (Stand):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Player Hand Value:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Win Percentage (Hit ):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Simulation Condition:&#9;</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Player Hand Value:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win Percentage (Double Down):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Lr Er Combo:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Player Hand Value:</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Win Percentage(Split ):</run>
+                <run bold='true'>&lt;[federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk] * [federated.07zs5ib0jdqllv12hpckv05cfztr].[none:playerHandValue:qk])</rows>
+        <cols>([federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:standAvgWinRate:qk] + ([federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:hitAvgWinRate:qk] + ([federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:doubleDownAvgWinRate:qk] + [federated.07zs5ib0jdqllv12hpckv05cfztr].[avg:splitAvgWinRate:qk])))</cols>
+      </table>
+      <simple-id uuid='{AE567FBF-F906-45FB-9CD1-26F5F0AC2730}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Player Hand Values'>
+      <cards>
+        <edge name='left'>
+          <strip size='161'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A91A7D40-89D0-4C90-8550-5E5DA71ECF62}' />
+    </window>
+    <window class='worksheet' name='Dealer Up Card Value'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D26F91B7-5071-4E6E-9AB8-892DF7F3C6D2}' />
+    </window>
+    <window class='worksheet' maximized='true' name='A value'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[:Measure Names]</field>
+            <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:lr_er_combo:nk]</field>
+            <field>[federated.07zs5ib0jdqllv12hpckv05cfztr].[none:usableAce:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EE8E53CD-E835-4BE3-9F47-41AC0BF671B6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='A value' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dealer Up Card Value' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Player Hand Values' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

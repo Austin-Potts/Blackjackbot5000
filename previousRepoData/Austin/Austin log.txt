@@ -1,0 +1,5 @@
+To Do:
+
+- Using Joey's machine learning algorithm build flask app to connect relevant data to front end application. 
+
+- Implement visuals into game logic
