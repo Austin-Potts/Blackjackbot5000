@@ -62,6 +62,7 @@ li.slidebars.active {
   background-color: #383740;
   border: 1px solid #383740;
 }
+
 .btn-primary:disabled {
   color: white;
   border-color: black;
@@ -79,7 +80,11 @@ li.slidebars.active {
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+  background-image: url('https://image.freepik.com/free-photo/jack-spade-heart-ace-card-with-casino-chip-stack-green-poker-table_23-2147881160.jpg');
+  background-size: cover;
+  /* background-position-y: -350px; */
 }
+
 .padding{
   padding-bottom: 2rem; 
 }
