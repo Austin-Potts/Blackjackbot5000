@@ -28,61 +28,11 @@ fr = open(winpct_file, 'rb')
 win_pct = pickle.load(fr)
 fr.close()
 
-# Other variables needed
-# Have a second list & usable ace in player cards to handle splits if necessary
-#actionCount = 0
-'''playerCards = [[],[]]
-playerUseAce = [False, False]
-playerValue = [0,0]
-dealerCards = []
-dealerUseAce = False
-dealerValue = 0
-f_dict = {'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6,
-                 '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10,
-                 'K': 10}
-num_decks = 2
-split_potential = 0
-state = (0,0,False,10)
-moneyOnLine = 0
-isEnd = 0'''
-
 num_decks = 6
 f_dict = {'A': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6,
                  '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10,
                  'K': 10}
 
-# A function to reset our variables after each game
-'''def reset():
-
-    global playerCards
-    playerCards = [[],[]]
-
-    global playerUseAce
-    playerUseAce = [False, False]
-
-    global playerValue
-    playerValue = [0,0]
-
-    global dealerCards
-    dealerCards = []
-
-    global dealerUseAce
-    dealerUseAce = False
-
-    global dealerValue
-    dealerValue = 0
-
-    global gamestack
-    gamestack = []
-
-    global split_potential
-    split_potential = 0
-
-    global state
-    state = (0,0,False,10)
-
-    global isEnd
-    isEnd = 0'''
 
 # A function to create a new stack
 def makeStack():
@@ -104,6 +54,7 @@ def makeStack():
     # Set the new stack
     return test_stack
 
+# Make a stack to draw from
 gamestack = makeStack()
 
 # A function to deal one card, using the game stack
@@ -192,21 +143,12 @@ def makeSuggestion(state,actionCount,dict):
     # Holder list to return values
     probValues = [0,0,0,0,0,0]
 
-    print('********Within make suggestion*****')
-    print(dict)
-
     # Get the win percentages for individual actions, using our current state
-
-    #final_dict['actions'][0]['winProb'] = weirdDivision(stateOutcome[0][0],stateOutcome[0][1])*100
-    #final_dict['actions'][1]['winProb'] = weirdDivision(stateOutcome[1][0],stateOutcome[1][1])*100
-    #final_dict['actions'][2]['winProb'] = weirdDivision(stateOutcome[2][0],stateOutcome[2][1])*100
-    #final_dict['actions'][3]['winProb'] = weirdDivision(stateOutcome[3][0],stateOutcome[3][1])*100
 
     probValues[0] = weirdDivision(stateOutcome[0][0],stateOutcome[0][1])*100
     probValues[1] = weirdDivision(stateOutcome[1][0],stateOutcome[1][1])*100
     probValues[2] = weirdDivision(stateOutcome[2][0],stateOutcome[2][1])*100
     probValues[3] = weirdDivision(stateOutcome[3][0],stateOutcome[3][1])*100
-    #global split_potential
 
     # Logic to calculate the total (unconditional) win probability
 
@@ -228,14 +170,10 @@ def makeSuggestion(state,actionCount,dict):
         totalWins = stateOutcome[0][0] + stateOutcome[1][0]
         totalGames = stateOutcome[0][1] + stateOutcome[1][1]
 
-        #final_dict['actions'][3]['winProb'] = 0
-        #final_dict['actions'][2]['winProb'] = 0
-
         probValues[3] = 0
         probValues[2] = 0
 
     currentWinProb = round(totalWins/totalGames,4)*100
-    #final_dict['winProb'] = currentWinProb
 
     probValues[4] = currentWinProb
 
@@ -292,9 +230,6 @@ def makeSuggestion(state,actionCount,dict):
 
 # Function to get the dealer's cards
 def dealerPolicy(dealerValue,dealerUseAce,dealerCards):
-
-
-    print(dealerValue,dealerUseAce,dealerCards)
     
     if dealerValue > 21:
               
@@ -323,7 +258,7 @@ def dealerPolicy(dealerValue,dealerUseAce,dealerCards):
                 return dealerValue + 11, True, False, dealerCards
             return dealerValue + 1, dealerUseAce, False, dealerCards
         else:
-            print(dealerValue, card_value)
+            
             return dealerValue + card_value, dealerUseAce, False, dealerCards
 
 # Method to check winner
@@ -348,12 +283,9 @@ def winner(player_value, dealer_value):
 def nextValue(action,cards_dealt,value,useAce,initSplit=False,hand=0):
 
     if (action == '1'):
-        print('Next Value')
-        print(value)
+
         # Update the player values if we're splitting
         if initSplit:
-            #value[0] = int(value[0]/2)
-            #value[1] = int(value[0])
 
             # Logic to ensure split Aces are given values of 11 each
             if value[0] == 2:
@@ -388,7 +320,6 @@ def nextValue(action,cards_dealt,value,useAce,initSplit=False,hand=0):
             card = giveCard()
 
             cards_dealt[hand].append(card)
-            #playerCards[hand].append(card)
 
             if f_dict[card] == 1:
                 if value[hand] <= 10:
@@ -483,7 +414,7 @@ def gamePlay(game,action,bet,paramList):
         final_dict['cards_dealt']['dealer'] = cards_dealt[2]        
         
         # Get split potential and adjust available actions
-        #global split_potential
+
         if split_potential == 1:
             final_dict['actions'][3]['available'] = 1
         else:
@@ -497,6 +428,7 @@ def gamePlay(game,action,bet,paramList):
 
     # Else if not new game, take action input and perform proper processing
     else:
+
         # cards_dealt processing of string returned from JS
         cards_dealt = cards_dealt.strip('(').strip(')').split('-')
         emptyList = []
@@ -542,7 +474,6 @@ def gamePlay(game,action,bet,paramList):
 
 
         # Manage ongoing game based on actions
-        # final_dict['gameState'] = 0 is a non-split game, 1 is a split game
         if gameState == 0:
 
             # Stay
@@ -552,7 +483,6 @@ def gamePlay(game,action,bet,paramList):
                 # Need a function to deal cards to dealer until they're done
                 while not isEnd:
                     value[2], useAce[2], isEnd, cards_dealt[2] = dealerPolicy(value[2],useAce[2],cards_dealt[2])
-                    #dealerValue, dealerUseAce, isEnd, dealerCards = dealerPolicy(value[2],useAce[2],cards_dealt[2])
 
                 dealerValue = value[2]
                 dealerUseAce = useAce[2]
