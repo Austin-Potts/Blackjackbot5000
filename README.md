@@ -1,5 +1,6 @@
 # Black Jack & Machine Learning
 ### https://blackjackbot5000.herokuapp.com/
+-----------------------------------------------------
 ### https://github.com/Austin-Potts/Blackjackbot5000
 ### https://github.com/jpicca/blackjackML
 ----
