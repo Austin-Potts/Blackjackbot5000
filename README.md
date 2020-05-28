@@ -43,4 +43,4 @@
 ----
 
 ----
-* *Please see the [INSTRUCTIONAL README.md](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL/README.md) file located in the [/final_RLandEDA/BlackJackRL/](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL) directory for notes and instruction for using the blackJackReinforcement jupyter notebook file*
+* *Please see the Instructional [README.md](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL/README.md) file located in the [/final_RLandEDA/BlackJackRL/](https://github.com/Austin-Potts/Blackjackbot5000/tree/master/final_RLandEDA/BlackJackRL) directory for notes and instruction for using the blackJackReinforcement jupyter notebook file*
