@@ -1,6 +1,7 @@
 # Black Jack & Machine Learning
 ### https://blackjackbot5000.herokuapp.com/
-### <<**PLACEHOLDER FOR HEROKU REPO**>>
+-----------------------------------------------------
+### https://github.com/Austin-Potts/Blackjackbot5000
 ### https://github.com/jpicca/blackjackML
 ----
 ### Group team members: 
